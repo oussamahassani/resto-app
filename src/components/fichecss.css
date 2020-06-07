@@ -1,0 +1,84 @@
+.flex{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+   align-items: center;
+}
+.flex-bettwen{
+    display: flex;
+    justify-content: space-between;
+}
+.imageleft{
+    position:absolute;
+    top : 15px;
+    left: 30px;
+    width: 50px;
+   
+}
+.centre-item{
+    margin-left: auto;
+    width: 200px;
+    margin-right: auto;
+  
+  
+}
+.red-bg{
+    background-color: thistle;
+}
+.padding-left{
+    padding-left: 100px;
+}
+.pading{
+    top : 25px;
+    right: 235px;
+    width: 200px;
+    color: skyblue;
+    position: absolute;
+}
+.Positionright{
+    float: right;
+    margin-right: 80px;
+}
+.positionleft{
+    float: left;
+    margin-left: 80px;
+}
+.Border-raduis{
+   border-radius: 10%;
+   background-color: red;
+   font-size: 16px;
+   width: 1000px;
+}
+.flexcart{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   align-items: center;
+   margin-top: 50px;
+}
+.right{
+    position:absolute;
+    top : 150px;
+    right: 30px;
+}
+.contenaire {
+ margin-top: 20px;
+max-width:1000px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.margintop {
+    margin-top: 100px;
+   
+}
+.centre {
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+   height: 500px;
+   
+}
+.field{
+padding-left: 150px;
+padding-right: 150px;
+}

@@ -1,0 +1,124 @@
+{
+  "users": [
+    {
+      "first_name": "kamal",
+      "last_name": "ben ali",
+      "password": "123456",
+      "email": "hassani@gmail.com",
+      "image": "https://semantic-ui.com/images/avatar2/large/ely",
+      "id": 1
+    },
+    {
+      "first_name": "aymen",
+      "last_name": "bensalh",
+      "email": "aymenbensalh@gmail.com",
+      "password": "123456",
+      "image": "https://semantic-ui.com/images/avatar2/large/mat",
+      "id": 2
+    },
+    {
+      "first_name": "amani",
+      "last_name": "BEN Salh ",
+      "email": "BENAmani2020@gmail.com",
+      "password": "123456",
+      "image": "https://semantic-ui.com/images/avatar/large/jenn",
+      "id": 3
+    },
+    {
+      "first_name": "admin",
+      "last_name": "admin",
+      "email": "oussamaadmin@gmail.com",
+      "password": "123456",
+      "image": "https://semantic-ui.com/images/avatar/large/jenn",
+      "id": 3
+    }
+  ],
+  "plat": [
+    {
+      "name": "3adma masouta",
+      "prix": "08",
+      "sup": "gazouza",
+      "image": "https://resize-elle.ladmedia.fr/rcrop/638,,forcex/img/var/plain_site/storage/images/elle-a-table/les-dossiers-de-la-redaction/dossier-de-la-redac/comment-preparer-un-oeuf-au-plat/90562366-1-fre-FR/20-recettes-d-oeufs-au-plat-a-avoir-goute-au-moins-une-fois-dans-sa-vie.jpg",
+      "id": 1
+    },
+    {
+      "name": "rOZ",
+      "prix": "50",
+      "sup": "loubia",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTew6Bu2TeWQnaaiIigr6gMQ4RKGTJ5LQf1SmCNKtxbobDeGcl52A&s",
+      "id": 2
+    },
+    {
+      "name": "rOZ",
+      "prix": "10",
+      "sup": "loubia",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTew6Bu2TeWQnaaiIigr6gMQ4RKGTJ5LQf1SmCNKtxbobDeGcl52A&s",
+      "id": 3
+    },
+    {
+      "name": "image1",
+      "prix": "25",
+      "sup": "250",
+      "image": "https://media.istockphoto.com/photos/empty-plate-on-white-picture-id184276935",
+      "id": 5
+    },
+    {
+      "name": "s7an far5",
+      "prix": "image",
+      "sup": "chorba",
+      "image": "https://media.istockphoto.com/photos/empty-plate-on-white-picture-id184276935",
+      "id": 6
+    }
+  ],
+  "ListeCarte": [
+    {
+      "name": "rOZ",
+      "prix": "10",
+      "sup": "loubia",
+      "id": 1
+    },
+    {
+      "name": "rOZ",
+      "prix": "50",
+      "sup": "loubia",
+      "id": 2
+    },
+    {
+      "name": "rOZ",
+      "prix": "10",
+      "sup": "loubia",
+      "id": 3
+    },
+    {
+      "name": "rOZ",
+      "prix": "50",
+      "sup": "loubia",
+      "id": 4
+    }
+  ],
+  "Order": [
+    {
+      "order": "150",
+      "total": "120dt",
+      "id": 1
+    },
+    {
+      "somme": 36.519999999999996,
+      "nombrearticle": 3,
+      "date": "Sun Jun 07 2020 13:01:04 ",
+      "id": 2
+    },
+    {
+      "somme": 36.519999999999996,
+      "nombrearticle": 3,
+      "date": "Sun Jun 07 2020 13:01:25 ",
+      "id": 3
+    },
+    {
+      "somme": "20.52",
+      "nombrearticle": 1,
+      "date": "Sun Jun 07 2020 15:55:00 ",
+      "id": 4
+    }
+  ]
+}

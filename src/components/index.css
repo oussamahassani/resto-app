@@ -1,0 +1,23 @@
+.users-item {
+  padding: 15px;
+  border: solid;
+  font-size: 1.8rem;
+margin-bottom: 20px;
+}
+
+.colorgray {
+  color: #b3adad;
+}
+.ui.table thead th.bagroundcolorred{
+  background-color: red;
+}
+.users-item button,
+.add-user {
+  padding: 7px;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 7px;
+  background: red;
+  border: red;
+  cursor: pointer;
+}
