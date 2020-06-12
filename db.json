@@ -1,19 +1,19 @@
 {
   "users": [
     {
-      "first_name": "kamal",
-      "last_name": "ben ali",
-      "password": "123456",
-      "email": "hassani@gmail.com",
-      "image": "https://semantic-ui.com/images/avatar2/large/ely",
+      "first_name": "oussama",
+      "last_name": "bay",
+      "email": "day@gmail.com",
+      "password": "1234567",
+      "image": "https://semantic-ui.com/images/avatar/large/steve.jpg",
       "id": 1
     },
     {
-      "first_name": "aymen",
-      "last_name": "bensalh",
-      "email": "aymenbensalh@gmail.com",
+      "first_name": "oussama",
+      "last_name": "hassan",
+      "email": "oussama@gmail.com",
       "password": "123456",
-      "image": "https://semantic-ui.com/images/avatar2/large/mat",
+      "image": "https://semantic-ui.com/images/avatar/large/steve.jpg",
       "id": 2
     },
     {
@@ -21,7 +21,7 @@
       "last_name": "BEN Salh ",
       "email": "BENAmani2020@gmail.com",
       "password": "123456",
-      "image": "https://semantic-ui.com/images/avatar/large/jenn",
+      "image": "https://semantic-ui.com/images/avatar2/large/kristy.png",
       "id": 3
     },
     {
@@ -29,8 +29,8 @@
       "last_name": "admin",
       "email": "oussamaadmin@gmail.com",
       "password": "123456",
-      "image": "https://semantic-ui.com/images/avatar/large/jenn",
-      "id": 3
+      "image": "https://semantic-ui.com/images/avatar/large/elliot.jpg",
+      "id": 4
     }
   ],
   "plat": [
@@ -60,65 +60,73 @@
       "prix": "25",
       "sup": "250",
       "image": "https://media.istockphoto.com/photos/empty-plate-on-white-picture-id184276935",
-      "id": 5
+      "id": 4
     },
     {
       "name": "s7an far5",
-      "prix": "image",
+      "prix": "20",
       "sup": "chorba",
       "image": "https://media.istockphoto.com/photos/empty-plate-on-white-picture-id184276935",
-      "id": 6
+      "id": 5
     }
   ],
-  "ListeCarte": [
-    {
-      "name": "rOZ",
-      "prix": "10",
-      "sup": "loubia",
-      "id": 1
-    },
-    {
-      "name": "rOZ",
-      "prix": "50",
-      "sup": "loubia",
-      "id": 2
-    },
-    {
-      "name": "rOZ",
-      "prix": "10",
-      "sup": "loubia",
-      "id": 3
-    },
-    {
-      "name": "rOZ",
-      "prix": "50",
-      "sup": "loubia",
-      "id": 4
-    }
-  ],
+  "ListeCarte": [],
   "Order": [
     {
-      "order": "150",
-      "total": "120dt",
+      "username": "admin",
+      "somme": 20,
+      "nombrearticle": 2,
+      "date": "Tue Jun 09 2020 12:51:21 ",
       "id": 1
     },
     {
-      "somme": 36.519999999999996,
-      "nombrearticle": 3,
-      "date": "Sun Jun 07 2020 13:01:04 ",
+      "username": "aymen",
+      "somme": 230,
+      "nombrearticle": 2,
+      "date": "Tue Jun 09 2020 12:54:00 ",
       "id": 2
     },
     {
-      "somme": 36.519999999999996,
-      "nombrearticle": 3,
-      "date": "Sun Jun 07 2020 13:01:25 ",
+      "username": "amani",
+      "somme": 30,
+      "nombrearticle": 1,
+      "date": "Fri Jun 12 2020 20:32:21 ",
       "id": 3
     },
     {
-      "somme": "20.52",
+      "username": "amani",
+      "somme": 10,
       "nombrearticle": 1,
-      "date": "Sun Jun 07 2020 15:55:00 ",
+      "date": "Fri Jun 12 2020 20:36:33 ",
       "id": 4
+    },
+    {
+      "username": "amani",
+      "somme": 20,
+      "nombrearticle": 1,
+      "date": "Fri Jun 12 2020 21:50:04 ",
+      "id": 5
+    },
+    {
+      "username": "admin",
+      "somme": 50,
+      "nombrearticle": 1,
+      "date": "Fri Jun 12 2020 21:52:46 ",
+      "id": 6
+    },
+    {
+      "username": "admin",
+      "somme": 10,
+      "nombrearticle": 1,
+      "date": "Fri Jun 12 2020 22:01:20 ",
+      "id": 7
+    },
+    {
+      "username": "admin",
+      "somme": 10,
+      "nombrearticle": 1,
+      "date": "Fri Jun 12 2020 22:02:24 ",
+      "id": 8
     }
   ]
 }

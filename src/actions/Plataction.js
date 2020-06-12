@@ -5,6 +5,87 @@ import Axios from 'axios';
 import {URL} from './baseurl'
 
 
+
+
+/* add new plat */
+export function AddNewplat(name,prix,sup,image){
+  return(dispatch)=>{
+    let img  ='https://media.istockphoto.com/photos/empty-plate-on-white-picture-id184276935'
+    if   (image=== '' ) 
+    {
+      return Axios.post(URL+'plat',{
+        "name": name,
+        "prix": prix,
+        "sup": sup,
+        "image":img
+       
+      })
+      .then((response)=>{ alert("success")
+      
+      })
+      .catch((error) => { alert (error)})
+  }
+  else if (image!=='') {
+    Axios.post(URL+ 'plat',{
+      "name": name,
+      "prix":prix ,
+      "sup": sup,
+      "image":image ,
+    })
+        .then(response => {
+          console.log(response)
+          alert('succes')
+          window.location.reload(); 
+        })
+        .catch(error => {
+          console.log(error)
+          alert(error)
+        })
+                                  }
+
+                                }
+}
+ /* quantiter change */ 
+ export function quantiterchange(e , el){
+   try {
+    
+    
+   return (dispatch) => {if ( e.target.value >= 1)
+    { 
+   Axios.put(URL+`ListeCarte/${el.id}`,({
+   "name":el.name,
+   "prix":el.prix,
+   "sup":el.sup,
+   "quantiter" :e.target.value
+   })
+   )
+   .then ((res) => console.log(res), setTimeout(() => {
+     window.location.reload()
+   }, 1000)  )
+   .catch((error) => alert(error))
+  }
+  
+  else if(e.target.value < 1)
+  {
+    alert("valeur non valide")
+  }
+   } 
+
+  }
+   catch (error) {
+     console.log(error)
+   }
+
+
+ }
+
+
+
+
+
+
+
+ /* fin quantiter change*/
 /*Getallorderfromapi*/
  export function Getallorderfromapi(){
   return (dispatch) => Axios.get(URL+"Order")
@@ -46,22 +127,6 @@ export function getcarteFromApi() {
       dispatch(getAllUsCard(res.data))
     );
 }
-
-/* add new plat */
-export function Addnewplat(name,prix,sup){
-  return(dispatch)=>{
-      return Axios.post(URL+'plat',{
-        "name": name,
-        "prix": prix,
-        "sup": sup,
-       
-      })
-      .then((response)=>{ alert("success")
-       
-      })
-  }
-}
-
 /* Add plat to cart*/
 export function Addplattocart(el){
   return(dispatch)=>{
@@ -69,6 +134,7 @@ export function Addplattocart(el){
         "name": el.name,
         "prix": el.prix,
         "sup": el.sup,
+        "quantiter": "1"
        
       })
       .then((response)=>{ alert("success")

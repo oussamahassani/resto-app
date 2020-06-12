@@ -21,3 +21,12 @@ margin-bottom: 20px;
   border: red;
   cursor: pointer;
 }
+.miniwidthbtn{
+  width: 80px;
+}
+.widtinputnsign{
+  width: 600px;
+}
+.couleurnoir{
+  color: #000;
+}

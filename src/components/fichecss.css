@@ -3,6 +3,7 @@
     justify-content: space-around;
     width: 400px;
    align-items: center;
+   font-size: 16px;
 }
 .flex-bettwen{
     display: flex;
@@ -12,8 +13,22 @@
     position:absolute;
     top : 15px;
     left: 30px;
-    width: 50px;
+    width: 80px;
+    height: 80px;
    
+}
+.margin-bottom{
+    margin-bottom: 10px;
+}
+
+.widht-btn{
+ width: 150px;
+ height: 50px;
+}
+.active{
+    color: violet;
+    border-bottom: 1px solid white;
+    font-size: 18px;
 }
 .centre-item{
     margin-left: auto;
@@ -26,12 +41,12 @@
     background-color: thistle;
 }
 .padding-left{
-    padding-left: 100px;
+    padding-left: 300px;
 }
 .pading{
     top : 25px;
-    right: 235px;
-    width: 200px;
+    right: 25px;
+    width: 300px;
     color: skyblue;
     position: absolute;
 }
@@ -39,6 +54,7 @@
     float: right;
     margin-right: 80px;
 }
+
 .positionleft{
     float: left;
     margin-left: 80px;
@@ -71,14 +87,94 @@ max-width:1000px;
     margin-top: 100px;
    
 }
-.centre {
-    display: flex;
-   align-items: center;
-   flex-direction: column;
-   height: 500px;
-   
+.paddingtop30{
+    padding-top: 30px;
+
+}
+.bagroundgray{
+    border: 2px solid rgb(59, 54, 54,0.8);
+    background-color: saddlebrown;
+    filter: drop-shadow(16px 16px 20px saddlebrown);
+    color : white;
+    font-size: 16px;
+    padding-top: 15px;
+    height: 350px;
+   margin-top: 50px;
+    
+}
+    .btncentre{
+    max-width: 200px;
+    margin-left: 350px;
+    margin-right: auto;
+    margin-top: 40px;
 }
 .field{
 padding-left: 150px;
 padding-right: 150px;
+}
+.widh250{
+width: 350px;
+}
+.floirright{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.padingleft10px {
+    padding-left: 10px;
+}
+.dispalyflexbutton{
+    display: flex;
+}
+.justflex{
+    display: flex;
+}
+
+.ui.inverted.segment{
+    background-color: rgb(88, 160, 238);
+    color: black;
+
+}
+.ui.secondary.inverted.pointing.menu{
+    border: none;
+}
+.footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.tachtfooter{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.hight{
+    height: 400px;
+}
+
+.bleu{
+
+    background-color: rgba(0, 0, 255, 0.123);
+}
+.noir{
+    background-color: rgba(255, 127, 80, 0.082);
+}
+
+.baroundnoir{
+color: cornsilk;
+background-color: black;
+padding: 20px 20px;
+}
+.margin0{
+
+
+
+width: 100%;
+}
+div.flexcart > div.margin-left50:nth-child(odd)
+{
+ margin-left: 90px;
 }

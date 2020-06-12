@@ -14,11 +14,11 @@ export class Order extends Component {
             <div className="contenaire">
                 <table class="ui celled striped table">
                     <thead>
-                        <tr><th   className="bagroundcolorred" colspan="4">
+                        <tr><th   className="bagroundcolorred" colspan="5">
                            Liste d'order 
                             </th>
                             </tr>
-                            <tr><th>Order number</th><th>Total sum</th><th>Quantity</th><th>Date</th></tr>
+                            <tr><th>Order number</th><th>order owner</th><th>Total sum</th><th>Quantity</th><th>Date</th></tr>
                         </thead>
                     <tbody>
                      {  this.props.card.order.map(el => <Orderchild  order={el}/> )  }

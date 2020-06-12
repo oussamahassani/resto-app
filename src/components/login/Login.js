@@ -11,7 +11,8 @@ class Login extends Component {
     errorpass = React.createRef();
     state = {
         pass: "",
-        email: ""
+        email: "",
+       changetype: true,
     }
     componentDidMount() {
         return this.props.getusersFromApi()
@@ -46,7 +47,7 @@ class Login extends Component {
 
     preparation() {
         tabmail = this.props.users.map(el => el.email)
-        password = this.props.users.map(el => el.password)
+        password = this.props.users.map(el => el.password)  
     }
     verefieruser(e) {
         this.preparation()
@@ -54,6 +55,7 @@ class Login extends Component {
         let pass = this.state.pass
         let email = this.state.email
         let id = -1
+        
         for (let i = 0; i < this.props.users.length; i++) {
             if (pass === password[i] && email === tabmail[i])
                 console.log(id = i)
@@ -93,7 +95,9 @@ class Login extends Component {
                             </div>
                             <div class="field">
                                 <label>Password</label>
-                                <input type="password" name="Password" placeholder="Password" onChange={(e) => this.changepass(e)} />
+                                <p  className="justflex"><input type={this.state.changetype ? "password" : "text"} className ="widtinputnsign"  name="Password" placeholder="Password" onChange={(e) => this.changepass(e)} />
+                                <div  className =" ui submit button miniwidthbtn" onClick={() => this.setState({changetype : !this.state.changetype})}>👁</div>
+                                 </p>
                                  <small ref={this.errorpass}>enter a password + 8 characters</small>
                             </div>
                             <Link to="/"> <div class="ui submit button" onClick={(e) => this.verefieruser(e)}>Submit</div></Link>
@@ -108,7 +112,7 @@ class Login extends Component {
     }
 }
 const mapStateToProps = (state) => ({
-    users: state.users,
+    users: state.users.user
 });
 
 const mapDispatchToProps = (dispatch) => ({

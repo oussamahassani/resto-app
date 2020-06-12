@@ -6,14 +6,15 @@ export class Orderchild extends Component {
       const { order } = this.props;
         return (
             <>
-    <tr>
+      <tr>
       <td> <i class="folder icon"></i> Devi- {Math.floor(Math.random() * 20 +  Number(order.id))} </td>
+      <td class="collapsing">{order.username}</td>
       <td class="collapsing">
       <i class="money bill alternate outline icon"></i>   {order.somme}
       </td>
       <td>{order.nombrearticle}</td>
       <td > <i class="calendar alternate outline icon"></i> {order.date}</td>
-    </tr>
+      </tr>
 
 
             </>

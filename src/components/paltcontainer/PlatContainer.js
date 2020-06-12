@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getplatFromApi } from '../actions/Plataction';
-import PlatItem from './platItem';
-import Nav from './nav/Nav'
-
+import { getplatFromApi } from '../../actions/Plataction';
+import PlatItem from './platItem'
+import Nav from '../nav/Nav'
+import {Footer} from '../index'
 export class PlatContainer extends Component {
   componentDidMount() {
     this.props.getAllPlat();
@@ -18,6 +18,7 @@ export class PlatContainer extends Component {
           <PlatItem key={i} el={el} />
         ))}
       </div>
+      <Footer/>
       </div>
     );
   }

@@ -2,9 +2,9 @@ import React, { Component ,useState,useEffect} from 'react';
 import { connect } from 'react-redux';
 import Swal from 'sweetalert2'
 import {Link, withRouter} from 'react-router-dom'
-import { deleteUser,Addplattocart,updateplattocart } from '../actions/Plataction';
-import './index.css';
-import Modal from '../components/listecaarde/modal'
+import { deleteUser,Addplattocart,updateplattocart } from '../../actions/Plataction';
+import '../index.css';
+import Flip from 'react-reveal/Flip';
 let name ="" ; let Lastname =""
 export const PlatItem = ({ el, delet,add,update }) => {
   const [login, setlogin] = useState(false)
@@ -34,15 +34,18 @@ export const PlatItem = ({ el, delet,add,update }) => {
     })
   }
   return (
+    <Flip duration="2500">
     <div className="users-item">
  
   <div class="ui card">
     <div className="flex">
-      <span style={{ float: "left" }}>plant NUm {el.id}</span>
+      <h6 style={{ float: "left" }}>plant NUm {el.id}</h6>
     </div>
+   
     <div class="image" height="50px">
       <img src={el.image} />
     </div>
+ 
     <div class="content">
       <div class="name">
         <h5> <em className="colorgray">Name :</em> {el.name}</h5>
@@ -66,6 +69,7 @@ export const PlatItem = ({ el, delet,add,update }) => {
     </div>
   </div>
 </div>
+</Flip>
   );
 };
 const mapStateToProps = (state) => ({});
