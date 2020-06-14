@@ -1,7 +1,7 @@
 import {GETALLUSERFORMAPI,DELATEUSERID,UPDATESTATE , UPDATEUSERID} from '../actions/types'
 const initistate =  {
  user : [] ,
-  iduser : 0
+  iduser : 1
 }
 
 
@@ -24,13 +24,20 @@ export default function userReducer(state = initistate, action) {
          iduser : action.payload
        }
        case UPDATEUSERID: 
-       console.log(action.payload)
        let  userdata = Object(state.user)
-       userdata.filter ( el => el.id != action.payload[5])
-
-        console.log(userdata)
+       let updat = {
+        "first_name":action.payload[0],
+        "last_name":action.payload[1],
+        "email":action.payload[2],
+        "password":action.payload[3],
+        "image":action.payload[4],
+        "id":action.payload[5],
+       }
+      let x =  userdata.filter ( el => el.id != action.payload[5])
+      console.log(action.payload)
+       x= x.concat(updat)
        return { ...state,
-       user : [...userdata , action.payload] 
+       user : x
       
        }
       default:

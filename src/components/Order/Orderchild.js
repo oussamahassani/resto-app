@@ -7,7 +7,7 @@ export class Orderchild extends Component {
         return (
             <>
       <tr>
-      <td> <i class="folder icon"></i> Devi- {Math.floor(Math.random() * 20 +  Number(order.id))} </td>
+      <td> <i class="folder icon"></i> Devi- {( 1000 + Number(order.id))} </td>
       <td class="collapsing">{order.username}</td>
       <td class="collapsing">
       <i class="money bill alternate outline icon"></i>   {order.somme}

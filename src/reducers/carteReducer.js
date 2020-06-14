@@ -1,5 +1,5 @@
-import { ADD_USERS, DELETE_USERS, GET_ALL_Plat,GET_ALL_CARD,DELETECARTE,GET_DATA_response_CART 
- , UPDATE_PLATE,GET_ALL_ORDER,REMIZEAZERO } from '../actions/types';
+import { ADD_USERS, DELETE_PLAT, GET_ALL_Plat,GET_ALL_CARD,DELETECARTE,GET_DATA_response_CART 
+ , UPDATE_PLATE,GET_ALL_ORDER} from '../actions/types';
 const initialState ={
 plat : [] , 
 cardt : [],
@@ -20,7 +20,7 @@ export default function carteReducer(state = initialState, action) {
 
     }
       
-          case DELETE_USERS:
+          case DELETE_PLAT:
             var  myKeys = Object(state.plat)
              console.log(myKeys.filter((plat) => plat.id !== action.payload))
             return {

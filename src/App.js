@@ -15,6 +15,7 @@ import SwaggerUI from "swagger-ui-react"
 import "swagger-ui-react/swagger-ui.css"
 import Updateuser from './components/gestionuser/updateuser'
 import {Ratinguser} from './components'
+import {Abonement} from './components'
 import './App.css';
 
 function App() {
@@ -32,10 +33,11 @@ function App() {
      <Route exact path="/gestion-user"><User/></Route>
      <Route exact path="/update-user"><Updateuser/></Route>
      <Route exact path="/rating-user"><Ratinguser/></Route>
+     <Route exact path="/Abonement"><Abonement/></Route>
    </Switch>
  </Router>
     </Provider>
   );
 }
 
-export default App;
+export default App 

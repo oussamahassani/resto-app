@@ -3,14 +3,16 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import '../fichecss.css'
 import { URL } from '../../actions/baseurl'
+import swal from 'sweetalert'
 export default function Signup() {
-    const name = useRef(null)
-    const lastname = useRef(null)
-    const password = useRef(null)
-    const email = useRef(null)
-    const image = useRef(null)
+    const name = useRef()
+    const lastname = useRef()
+    const password = useRef()
+    const email = useRef()
+    const image = useRef()
       const [show, setShow] = useState(false);
     function senddata() {
+        console.log(password.current.value)
         axios.post(URL + 'users', {
             "first_name": name.current.value,
             "last_name": lastname.current.value,
@@ -30,11 +32,12 @@ export default function Signup() {
     }
     function senddatatoserver()
     {   if ( name.current.value !=='' && email.current.value !=='' && password.current.value !=='' && lastname.current.value !=='')
-         { alert("all remplr")
+         { //alert("all remplr")
           senddata()
              }
            else
-           alert("fill all input")
+           swal("ouuups !", "fill all input", "error");
+           
 
     }
     return (
@@ -53,7 +56,7 @@ export default function Signup() {
   </div>
                     <p>We just updated our privacy policy here to better service our customers. We recommend reviewing the</p>
                 </div>
-                <form class="ui form inverted">
+                <div  class="ui form inverted">
                     <h4 class="ui dividing header" style={{ color: "white" }}>Sign in</h4>
                     <div class="field">
                         <div class="two fields">
@@ -83,8 +86,8 @@ export default function Signup() {
                         <label>Avatar</label>
                         <input type="text" ref={image } name="avatar" placeholder="avatar" required />
                     </div>
-                    <button value="submit" class="ui submit button" onClick={senddatatoserver}> submit</button>
-                </form>
+                    <input value="submit" class="ui submit button" type="submit" onClick={senddatatoserver}/> 
+                </div>
                 <div class="ui floating message">
                     <p>you have acount !! <Link to="login"> you can connect from here </Link> </p>
                 </div>
@@ -92,12 +95,3 @@ export default function Signup() {
         </div>
     )
 }
-{/*    axios.post(URL+"users",({
-   "first_name": name.name ,
-   "last_name": Lasname.Lasname ,
-   "password": password.password,
-   "email": email.email ,
-   "image":image.image 
-    }) )
- .then( res => console.log(res))
-.catch( error => alert(error))*/}

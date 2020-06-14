@@ -30,3 +30,62 @@ margin-bottom: 20px;
 .couleurnoir{
   color: #000;
 }
+
+/* box price */
+
+div.box {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+div.box .width{
+
+width: 20%;
+
+}
+
+div.box  .price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 400px;
+}
+div.box  .hiegthcarte{
+
+  height: 500px !important;
+}
+div.box .price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+div.box  .price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+div.box  .price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+div.box  .price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+div.box  .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* end box price */

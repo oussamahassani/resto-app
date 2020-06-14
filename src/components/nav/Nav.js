@@ -57,7 +57,7 @@ const  delateallcarte = () => {
  {localStorage.getItem("name") == "admin"  && localStorage.getItem("lastname") == "admin"?   <em class="item"><NavLink exact activeClassName="active" to="/gestion-user">Gestion-user</NavLink></em> : ""}
     </div>
   </div>   
-  { login ? <p className="item  flex-bettwen pading"  >  <span > Hello {localStorage.getItem("name") + " " + localStorage.getItem("lastname")} </span> <div className="ui submit  violet button widht-btn" onClick={clearlocalsotreg}><NavLink to ="/">Logout</NavLink> </div></p> : ""}
+  { login ? <p className="item  flex-bettwen pading "  >  <span className="couleurnoir" > Hello {localStorage.getItem("name") + " " + localStorage.getItem("lastname")} </span> <div className="ui submit  violet button widht-btn" onClick={clearlocalsotreg}><NavLink to ="/">Logout</NavLink> </div></p> : ""}
      
       <br/> </div> 
         </>

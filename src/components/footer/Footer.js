@@ -16,16 +16,16 @@ export default function Footer() {
         <div className="">
           <h4 className="ui inverted header">SOCIAL NETWORK</h4>
           <div className="ui inverted link list widh250">
-          <p> Facebook : &emsp;&emsp;<a href="#" className="item">Link One</a></p> 
-            <p>Twitter &emsp;&emsp;<a href="#" className="item">Link Two</a>;</p>
-            <p>Instagrame &emsp;&emsp;<a href="#" className="item">Link Three</a></p>
+          <p> Facebook : &emsp;&emsp;<a href="#" className="item">Reso app FANS</a></p> 
+            <p>Twitter &emsp;&emsp;<a href="#" className="item">Twiit Resto app</a></p>
+            <p>Instagrame &emsp;&emsp;<a href="#" className="item"> aour plat in instagram</a></p>
           </div>
         </div>
         <div className="three wide column">
-          <h4 className="ui inverted header"></h4>
+          <h4 className="ui inverted header"> join us, we will wait for you</h4>
           <div className="ui inverted link list">
-            <a href="#" className="item">CUSTOMER REVIEWS</a>
-            <a href="#" className="item">Link Two</a>
+            <a target='blank' href="rating-user" className="item">CUSTOMER REVIEWS</a>
+            <a target='blank' href="Abonement" className="item">Abonement</a>
           </div>
         </div>
         <div className="seven wide column">

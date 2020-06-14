@@ -80,7 +80,7 @@ export class Mycard extends Component {
       "nombrearticle": nombreaticle,
       "date": date
     }))
-      .then((res) => alert(res), this.delateallcarte(), this.componentWillUnmount() )
+      .then((res) =>this.delateallcarte(), this.componentWillUnmount() )
                 
       .catch((error) => alert(error))
 

@@ -1,8 +1,9 @@
-import { ADD_USERS, DELETE_USERS, GET_ALL_Plat,
+import { ADD_USERS, DELETE_PLAT, GET_ALL_Plat,
   GET_ALL_CARD,DELETECARTE , GET_DATA_response_CART,UPDATE_PLATE, GET_ALL_ORDER,
   } from './types';
 import Axios from 'axios';
 import {URL} from './baseurl'
+import swal from 'sweetalert'
 
 
 
@@ -10,6 +11,8 @@ import {URL} from './baseurl'
 /* add new plat */
 export function AddNewplat(name,prix,sup,image){
   return(dispatch)=>{
+    if (name !=="" && prix !=="" && sup !=="")
+    {
     let img  ='https://media.istockphoto.com/photos/empty-plate-on-white-picture-id184276935'
     if   (image=== '' ) 
     {
@@ -20,9 +23,11 @@ export function AddNewplat(name,prix,sup,image){
         "image":img
        
       })
-      .then((response)=>{ alert("success")
+      .then((response)=>{
+
       
-      })
+      if( !alert("you doing great")){window.location.reload();}
+  })
       .catch((error) => { alert (error)})
   }
   else if (image!=='') {
@@ -35,7 +40,7 @@ export function AddNewplat(name,prix,sup,image){
         .then(response => {
           console.log(response)
           alert('succes')
-          window.location.reload(); 
+          //window.location.reload(); 
         })
         .catch(error => {
           console.log(error)
@@ -44,6 +49,9 @@ export function AddNewplat(name,prix,sup,image){
                                   }
 
                                 }
+   else
+   swal("ouups!", "your imput is empty!", "error");
+  }
 }
  /* quantiter change */ 
  export function quantiterchange(e , el){
@@ -137,7 +145,12 @@ export function Addplattocart(el){
         "quantiter": "1"
        
       })
-      .then((response)=>{ alert("success")
+      .then((response)=>{ swal({
+        title: "You doing great",
+        text: "You item is add",
+        icon: "success",
+        button: "GOOD",
+      });
         dispatch(loadRespence(el))
       })
   }
@@ -163,9 +176,13 @@ export const addUser = (payload) => ({
 });
 
 /*delette user */
-
-export const deleteUser = (payload) => ({
-  type: DELETE_USERS,
+export const  delatplatofcarte = (payload)  => (dispatch) =>{
+  return   Axios.delete(URL+`plat/${payload}`)
+  .then((res)=>{ dispatch(deletepalt(payload))})
+   
+}
+export const deletepalt = (payload) => ({
+  type: DELETE_PLAT,
   payload,
 });
 

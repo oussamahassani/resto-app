@@ -66,7 +66,7 @@ let imag  ='https://media.istockphoto.com/photos/empty-plate-on-white-picture-id
           <h1 className="btncentre">Add new Plat</h1>
             <div className="contenaire centret"><br />
             <div className="ui inverted segment">
- <form className="ui form inverted">
+ <class className="ui form inverted">
  <div class="field">
    <label>Name</label>
    <p><input ref={(input) => this.name = input} type="text" onChange={(e) => this.setState({name: e.target.value})} placeholder="Name" name="name" required /> </p>
@@ -88,7 +88,7 @@ let imag  ='https://media.istockphoto.com/photos/empty-plate-on-white-picture-id
     <br></br>
    <p> <button className="ui inverted yellow  button" onClick = {()  =>   AddNewplat (name,prix,sup,image)}>Add New PLat</button></p>
    </div>
- </form>
+ </class>
 </div>
 </div>
         </div>

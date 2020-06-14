@@ -1,7 +1,7 @@
 import {ON_MESSAGE} from '../actions/types'
 import {ApiAiClient} from 'api-ai-javascript';
 
-const initState = [{ text: "hello im your assistente in you need help to order palt "}];
+const initState = [{ text: "hello im your assistente if you need help "}];
 
 export const messageReducer = (state = initState, action) => {
   switch (action.type) {

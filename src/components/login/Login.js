@@ -4,6 +4,7 @@ import Nav from '../nav/Nav'
 import '../fichecss.css'
 import { getusersFromApi } from '../../actions/userAction'
 import { connect } from 'react-redux'
+import swal from 'sweetalert'
 let tabmail = []
 let password = []
 class Login extends Component {
@@ -74,7 +75,7 @@ class Login extends Component {
             
         }
         else {
-              window.location.reload()
+            swal("plz  insert valide data to connect in your store")
             e.preventDefault()
         }
     }

@@ -2,7 +2,7 @@ import React, { Component ,useState,useEffect} from 'react';
 import { connect } from 'react-redux';
 import Swal from 'sweetalert2'
 import {Link, withRouter} from 'react-router-dom'
-import { deleteUser,Addplattocart,updateplattocart } from '../../actions/Plataction';
+import { delatplatofcarte,Addplattocart,updateplattocart } from '../../actions/Plataction';
 import '../index.css';
 import Flip from 'react-reveal/Flip';
 let name ="" ; let Lastname =""
@@ -64,7 +64,7 @@ export const PlatItem = ({ el, delet,add,update }) => {
       <div className="flexcart">
 {login ? <button className="ui inverted yellow  button" onClick={() => add (el)}><i class="shopping basket icon"></i></button> :<button onClick={popup}> <i class="shopping basket icon"></i></button>}
   {name == "admin"  && Lastname == "admin"?   <button className="ui inverted red  button" onClick={() => delet (el.id)}><i class="trash icon"></i> </button> :""  }
-{name == "admin"  && Lastname == "admin"?  <button className="ui inverted red  button" onClick={() =>update(el.id)}>  <Link to="modifier"> 🛠</Link> </button> :"" }
+{name == "admin"  && Lastname == "admin"?  <Link  to="modifier"><button className="ui inverted red  button" onClick={() =>update(el.id)}>   🛠 </button></Link> :"" }
       </div>
     </div>
   </div>
@@ -75,7 +75,7 @@ export const PlatItem = ({ el, delet,add,update }) => {
 const mapStateToProps = (state) => ({});
 
 const mapDispatchToProps = (dispatch) => ({
-  delet: (cardid) => dispatch(deleteUser(cardid)),
+  delet: (cardid) => dispatch(delatplatofcarte(cardid)),
   add : (card) => dispatch(Addplattocart(card)),
   update : (card) => dispatch(updateplattocart(card))
 });

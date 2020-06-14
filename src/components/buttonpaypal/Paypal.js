@@ -21,7 +21,7 @@ import ReactDOM from 'react-dom'
 
             render() {
                 return (
-                   <PayPalButton
+                   <PayPalButton 
                         createOrder={ (data, actions) => this.createOrder(data, actions) }
                         onApprove={ (data, actions) => this.onApprove(data, actions) }
                     />
